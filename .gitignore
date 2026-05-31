@@ -1,0 +1,22 @@
+# Binaires compilés — ne pas versionner
+build/
+
+# Fichiers MSVC
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# Fichiers système Windows
+Thumbs.db
+Desktop.ini
+
+# Éditeurs
+.vs/
+*.user
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
