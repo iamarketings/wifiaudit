@@ -1,0 +1,9 @@
+{
+  "skills": {
+    "msvc-compile": {
+      "name": "msvc-compile",
+      "description": "Compile C/C++ with MSVC (Visual Studio 18 BuildTools, cl.exe 19.50). Usage: /msvc-compile <source.c> [output.exe] [flags]",
+      "prompt": "MSVC C/C++ Compiler Skill — Visual Studio 18 BuildTools, cl.exe 19.50.35727, MSVC 14.50.35717, Windows Kits 10.0.26100.0.\n\nCompiler available at: C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe (in PATH as cl.exe)\n\n=== IMPORTANT: Always set these env vars before compiling ===\nexport INCLUDE=\"C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\include;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\shared\"\nexport LIB=\"C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\lib\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\ucrt\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\um\\x64\"\n\n=== Bear in Git Bash (double-slash flags) ===\ncl //nologo //utf-8 //W4 //Fe:program.exe source.c\ncl //nologo //utf-8 //W4 //std:c17 //Fe:program.exe source.c (C17)\ncl //nologo //utf-8 //W4 //Zi //Fe:program.exe source.c (debug)\ncl //nologo //utf-8 //W4 //O2 //Fe:program.exe source.c (optimized)\ncl //nologo //utf-8 //W4 //TC //Fe:program.exe source.c (force C mode)\n\nVS 2022 also available: C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools"
+    }
+  }
+}
